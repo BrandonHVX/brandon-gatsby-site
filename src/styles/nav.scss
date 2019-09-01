@@ -1,19 +1,73 @@
 :root {
   /* set the sidebar width */
-  --sidebar-width: 30vw;
+  --sidebar-width: 28vw;
 }
 
 body {
   overflow-x: hidden;
 }
 
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh;
+
+  color: #fff;
+  transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
+  transform-origin: bottom left;
+}
+
 .w-sidebar {
   width: var(--sidebar-width);
   max-width: var(--sidebar-width);
   top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   z-index: 1060;
 }
 
+#sidebar.active {
+  margin-left: -250px;
+  transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: #00387d;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: #7386d5;
+  background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
 .row.collapse {
   margin-left: calc(-1 * var(--sidebar-width));
   left: 0;

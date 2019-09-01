@@ -10,9 +10,16 @@ const social = {
   marginRight: "5px",
 }
 
+const sidebar = {
+  display: "flex",
+
+  justifyContent: "center",
+}
+
 export default function side() {
   return (
     <div>
+      <img src={Brandonpic} className="round-img" />
       <p>Dummy Heading</p>
       <img src={linked} style={social} />
       <img src={twitter} style={social} />
