@@ -1,9 +1,9 @@
 import React from "react"
 import { Row, Col, Container, ListGroup } from "react-bootstrap"
-import Side from "../components/side"
-import Layout from "../components/layout"
-import Aboutme from "../components/aboutme"
-import Navbar from "../components/navBar"
+import Side from "../components/Side"
+import Layout from "../components/Layout"
+import Aboutme from "../components/Aboutme"
+import Navbar from "../components/NavBar"
 import SEO from "../components/seo"
 
 const IndexPage = () => (

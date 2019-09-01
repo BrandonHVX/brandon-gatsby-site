@@ -4,7 +4,7 @@ import Side from "../components/Side"
 import Layout from "../components/Layout"
 import Aboutme from "../components/Aboutme"
 import Navbar from "../components/NavBar"
-import Projects from "../components/Projects"
+import Projects from "../components/ProjectsNav"
 import SEO from "../components/seo"
 
 const projects = () => (
